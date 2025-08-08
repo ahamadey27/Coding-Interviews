@@ -47,6 +47,18 @@ namespace Wonderlog
             };
 
             decimal threshold = 8.5m;
+
+            List<string> sortedHotels = new List<string>();
+
+            foreach (KeyValuePair<string, decimal> pair in hotelDictionary)
+            {
+                if (pair.Value >= threshold)
+                {
+                    sortedHotels.Add(pair.Key);
+                }
+            }
+
+            Console.WriteLine(sortedHotels);
         }
        
 
