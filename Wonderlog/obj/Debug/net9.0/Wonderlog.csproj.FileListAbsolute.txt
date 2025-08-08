@@ -1,0 +1,15 @@
+c:\Users\hamad\Documents\GitHub\Coding-Interviews\Wonderlog\bin\Debug\net9.0\Wonderlog.exe
+c:\Users\hamad\Documents\GitHub\Coding-Interviews\Wonderlog\bin\Debug\net9.0\Wonderlog.deps.json
+c:\Users\hamad\Documents\GitHub\Coding-Interviews\Wonderlog\bin\Debug\net9.0\Wonderlog.runtimeconfig.json
+c:\Users\hamad\Documents\GitHub\Coding-Interviews\Wonderlog\bin\Debug\net9.0\Wonderlog.dll
+c:\Users\hamad\Documents\GitHub\Coding-Interviews\Wonderlog\bin\Debug\net9.0\Wonderlog.pdb
+c:\Users\hamad\Documents\GitHub\Coding-Interviews\Wonderlog\obj\Debug\net9.0\Wonderlog.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\hamad\Documents\GitHub\Coding-Interviews\Wonderlog\obj\Debug\net9.0\Wonderlog.AssemblyInfoInputs.cache
+c:\Users\hamad\Documents\GitHub\Coding-Interviews\Wonderlog\obj\Debug\net9.0\Wonderlog.AssemblyInfo.cs
+c:\Users\hamad\Documents\GitHub\Coding-Interviews\Wonderlog\obj\Debug\net9.0\Wonderlog.csproj.CoreCompileInputs.cache
+c:\Users\hamad\Documents\GitHub\Coding-Interviews\Wonderlog\obj\Debug\net9.0\Wonderlog.sourcelink.json
+c:\Users\hamad\Documents\GitHub\Coding-Interviews\Wonderlog\obj\Debug\net9.0\Wonderlog.dll
+c:\Users\hamad\Documents\GitHub\Coding-Interviews\Wonderlog\obj\Debug\net9.0\refint\Wonderlog.dll
+c:\Users\hamad\Documents\GitHub\Coding-Interviews\Wonderlog\obj\Debug\net9.0\Wonderlog.pdb
+c:\Users\hamad\Documents\GitHub\Coding-Interviews\Wonderlog\obj\Debug\net9.0\Wonderlog.genruntimeconfig.cache
+c:\Users\hamad\Documents\GitHub\Coding-Interviews\Wonderlog\obj\Debug\net9.0\ref\Wonderlog.dll
