@@ -57,8 +57,12 @@ namespace Wonderlog
                     sortedHotels.Add(pair.Key);
                 }
             }
+            foreach (string hotels in sortedHotels)
+            {
+                Console.WriteLine(hotels);
+            }
 
-            Console.WriteLine(sortedHotels);
+            
         }
        
 
