@@ -33,6 +33,7 @@ namespace Wonderlog
     {
         public static void TripCountFuntion()
         {
+            // Sample data: each string is username:trip_id
             List<string> usersTripsAmount = new List<string>
             {
                 "peter:trip101",
@@ -43,7 +44,35 @@ namespace Wonderlog
                 "peter:trip103"
             };
 
+            // Dictionary to store trip counts for each user
+            var result = new Dictionary<string, int>();
 
+            // Count trips for each user
+            foreach (var item in usersTripsAmount)
+            {
+                // Extract username from each record
+                var userName = item.Split(":")[0]; //[0] selects the first element of the array returned by the split function
+                // If user already exists, increment their count
+                if (result.ContainsKey(userName))
+                {
+                    result[userName]++;
+                }
+                // If user does not exist, set their count to 1
+                else
+                {
+                    result[userName] = 1;
+                }
+            }
+
+            // Get all usernames and sort them alphabetically
+            var userNames = new List<string>(result.Keys);
+            userNames.Sort();
+
+            // Print each username and their trip count
+            foreach (var username in userNames)
+            {
+                Console.WriteLine($"{username} {result[username]}");
+            }
 
         }
 

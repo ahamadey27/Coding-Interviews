@@ -5,6 +5,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        HighRatedHotels.HotelFunction();
+        //HighRatedHotels.HotelFunction();
+        UserTripCounter.TripCountFuntion();
     }
 }
