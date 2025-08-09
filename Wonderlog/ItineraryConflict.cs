@@ -28,31 +28,33 @@ namespace Wonderlog
         //params lets you pass a variable number of arguments (avoid using new string[] when calling adding function parameters)
         public static void TimeConfilct(params string[] events)
         {
-            //TimeSpan is used to represent time intervals
+            // TimeSpan is used to represent time intervals
             var eventList = new List<(TimeSpan start, TimeSpan end)>();
 
+            // Parse each event string into start and end times
             foreach (var evt in events)
             {
-                var parts = evt.Split('-');
-                var start = TimeSpan.Parse(parts[0]);
-                var end = TimeSpan.Parse(parts[1]);
-                eventList.Add((start, end)); //double parenthesis are used to create a tuple (a single object that holds multiple values) 
+                var parts = evt.Split('-'); // Split the string into start and end time
+                var start = TimeSpan.Parse(parts[0]); // Convert start time string to TimeSpan
+                var end = TimeSpan.Parse(parts[1]);   // Convert end time string to TimeSpan
+                eventList.Add((start, end)); // Add the tuple (start, end) to the list
             }
 
+            // Sorts the list of events by their start time (earliest to latest)
             eventList.Sort((a, b) => a.start.CompareTo(b.start));
 
-            for (int i = 1; 1 < eventList.Count; i++)
+            // Loop through each event starting from the second one
+            for (int i = 1; i < eventList.Count; i++)
             {
+                // Check if the current event starts before the previous event ends (overlap)
                 if (eventList[i].start < eventList[i - 1].end)
                 {
-                    System.Console.WriteLine("Conflict");
-                    return;
-                }
-                else
-                {
-                    System.Console.WriteLine("No Conflict");
+                    System.Console.WriteLine("Conflict"); // Print "Conflict" if there is an overlap
+                    return; // Exit the function since a conflict was found
                 }
             }
+            // If no conflicts were found, print "No Conflict" once after checking all events
+            System.Console.WriteLine("No Conflict");
         }
     }
 }
