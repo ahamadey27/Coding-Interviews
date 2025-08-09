@@ -40,6 +40,19 @@ namespace Wonderlog
             }
 
             eventList.Sort((a, b) => a.start.CompareTo(b.start));
+
+            for (int i = 1; 1 < eventList.Count; i++)
+            {
+                if (eventList[i].start < eventList[i - 1].end)
+                {
+                    System.Console.WriteLine("Conflict");
+                    return;
+                }
+                else
+                {
+                    System.Console.WriteLine("No Conflict");
+                }
+            }
         }
     }
 }
