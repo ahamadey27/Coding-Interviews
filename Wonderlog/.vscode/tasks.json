@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Run (hotels)",
+			"command": "dotnet run --project \"${workspaceFolder}/Wonderlog.csproj\" -- hotels",
+			"isBackground": false,
+			"group": "build"
+		}
+	]
+}

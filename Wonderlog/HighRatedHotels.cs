@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Wonderlog
+ namespace Wonderlog
 {
 
     /*You are given a list of hotels and their ratings. Your task is to filter this list and display only the hotels that have a rating of 8.5 or higher.
