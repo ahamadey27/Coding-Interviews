@@ -37,8 +37,9 @@ namespace Wonderlog
                 var start = TimeSpan.Parse(parts[0]);
                 var end = TimeSpan.Parse(parts[1]);
                 eventList.Add((start, end)); //double parenthesis are used to create a tuple (a single object that holds multiple values) 
-
             }
+
+            eventList.Sort((a, b) => a.start.CompareTo(b.start));
         }
     }
 }
