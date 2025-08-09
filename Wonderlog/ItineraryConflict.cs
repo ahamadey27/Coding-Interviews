@@ -24,5 +24,21 @@ namespace Wonderlog
         Sample Output
         Conflict
         */
+
+        //params lets you pass a variable number of arguments (avoid using new string[] when calling adding function parameters)
+        public static void TimeConfilct(params string[] events)
+        {
+            //TimeSpan is used to represent time intervals
+            var eventList = new List<(TimeSpan start, TimeSpan end)>();
+
+            foreach (var evt in events)
+            {
+                var parts = evt.Split('-');
+                var start = TimeSpan.Parse(parts[0]);
+                var end = TimeSpan.Parse(parts[1]);
+                eventList.Add((start, end)); //double parenthesis are used to create a tuple (a single object that holds multiple values) 
+
+            }
+        }
     }
 }
