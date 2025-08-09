@@ -1,0 +1,15 @@
+/Users/alex/Documents/Github/Coding-Interviews/Wonderlog/bin/Debug/net8.0/Wonderlog
+/Users/alex/Documents/Github/Coding-Interviews/Wonderlog/bin/Debug/net8.0/Wonderlog.deps.json
+/Users/alex/Documents/Github/Coding-Interviews/Wonderlog/bin/Debug/net8.0/Wonderlog.runtimeconfig.json
+/Users/alex/Documents/Github/Coding-Interviews/Wonderlog/bin/Debug/net8.0/Wonderlog.dll
+/Users/alex/Documents/Github/Coding-Interviews/Wonderlog/bin/Debug/net8.0/Wonderlog.pdb
+/Users/alex/Documents/Github/Coding-Interviews/Wonderlog/obj/Debug/net8.0/Wonderlog.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alex/Documents/Github/Coding-Interviews/Wonderlog/obj/Debug/net8.0/Wonderlog.AssemblyInfoInputs.cache
+/Users/alex/Documents/Github/Coding-Interviews/Wonderlog/obj/Debug/net8.0/Wonderlog.AssemblyInfo.cs
+/Users/alex/Documents/Github/Coding-Interviews/Wonderlog/obj/Debug/net8.0/Wonderlog.csproj.CoreCompileInputs.cache
+/Users/alex/Documents/Github/Coding-Interviews/Wonderlog/obj/Debug/net8.0/Wonderlog.sourcelink.json
+/Users/alex/Documents/Github/Coding-Interviews/Wonderlog/obj/Debug/net8.0/Wonderlog.dll
+/Users/alex/Documents/Github/Coding-Interviews/Wonderlog/obj/Debug/net8.0/refint/Wonderlog.dll
+/Users/alex/Documents/Github/Coding-Interviews/Wonderlog/obj/Debug/net8.0/Wonderlog.pdb
+/Users/alex/Documents/Github/Coding-Interviews/Wonderlog/obj/Debug/net8.0/Wonderlog.genruntimeconfig.cache
+/Users/alex/Documents/Github/Coding-Interviews/Wonderlog/obj/Debug/net8.0/ref/Wonderlog.dll
