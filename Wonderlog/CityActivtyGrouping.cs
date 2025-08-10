@@ -28,40 +28,40 @@ namespace Wonderlog
 
         public static void CityActivity(params string[] userInput)
         {
+            // Dictionary to group activities by city
             var activitiesDict = new Dictionary<string, List<string>>();
 
+            // Loop through each input string
             foreach (var events in userInput)
             {
+                // Split input into city and activity
                 var parts = events.Split(",");
                 var city = parts[0];
-                var rest = new List<string>();
-                for (int i = 1; i < parts.Length; i++)
-                {
-                    rest.Add(parts[i]);
-                }
+                // If city is not in the dictionary, add it with a new list
                 if (!activitiesDict.ContainsKey(city))
                 {
                     activitiesDict[city] = new List<string>();
                 }
+                // Add the activity to the city's list
                 activitiesDict[city].Add(parts[1]);
             }
 
-            //Get all city names and sort them 
+            // Get all city names and sort them alphabetically
             var cityNames = new List<string>(activitiesDict.Keys);
             cityNames.Sort();
 
+            // For each city, sort its activities and print in required format
             foreach (var city in cityNames)
             {
-                //sort activities for each city
+                // Sort activities for each city alphabetically
                 activitiesDict[city].Sort();
 
-                //Join activities with comas
+                // Join activities with commas
                 string activities = string.Join(",", activitiesDict[city]);
 
-                //Print to required format
+                // Print city and its activities in the required format
                 System.Console.WriteLine($"{city}: {activities}");
             }
-
 
         }
         
