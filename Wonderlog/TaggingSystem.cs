@@ -33,26 +33,30 @@ namespace Wonderlog
 
             foreach (var input in hashtags)
             {
+                // Check if tag starts with '#'
                 if (!input.StartsWith("#"))
                 {
                     System.Console.WriteLine("Invalid");
                     continue;
                 }
-                if (input.Length < 2 || input.Length > 15)
+                // Check if tag length is between 3 and 15 (inclusive)
+                if (input.Length < 3 || input.Length > 15)
                 {
                     System.Console.WriteLine("Invalid");
                     continue;
                 }
+                // Check if tag contains any spaces
                 if (input.Contains(" "))
                 {
                     System.Console.WriteLine("Invalid");
                     continue;
                 }
 
-                //checks if all characters are lower after #
+                // Check if all characters after '#' are lowercase letters
                 bool valid = true;
                 for (int i = 1; i < input.Length; i++)
                 {
+                    // If character is not a lowercase letter, mark as invalid
                     if (input[i] < 'a' || input[i] > 'z')
                     {
                         valid = false;
@@ -60,6 +64,7 @@ namespace Wonderlog
                     }
                 }
 
+                // Print Valid if all checks passed, otherwise Invalid
                 System.Console.WriteLine(valid ? "Valid" : "Invalid");
 
                  

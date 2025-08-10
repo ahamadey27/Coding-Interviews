@@ -7,12 +7,19 @@ class Program
     {
         //HighRatedHotels.HotelFunction();
         //ItineraryConflict.TimeConfilct("09:00-11:30", "14:00-16:00", "11:00-13:00");
-        CityActivtyGrouping.CityActivity(
-            "Paris,Eiffel Tower",
-            "London,British Museum",
-            "Paris,Louvre Museum",
-            "Rome,Colosseum",
-            "London,Tower of London"
+        // CityActivtyGrouping.CityActivity(
+        //     "Paris,Eiffel Tower",
+        //     "London,British Museum",
+        //     "Paris,Louvre Museum",
+        //     "Rome,Colosseum",
+        //     "London,Tower of London"
+        // );
+
+        TaggingSystem.TaggingFunct(
+            "#travel",
+            "#paris2024",
+            "#views from the top",
+            "#s"
         );
     }
 }
