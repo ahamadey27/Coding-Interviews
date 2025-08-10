@@ -49,7 +49,7 @@ namespace Wonderlog
                 // Check if the current event starts before the previous event ends (overlap)
                 if (eventList[i].start < eventList[i - 1].end)
                 {
-                    System.Console.WriteLine("Conflict"); // Print "Conflict" if there is an overlap
+                    Console.WriteLine("Conflict"); // Print "Conflict" if there is an overlap
                     return; // Exit the function since a conflict was found
                 }
             }
