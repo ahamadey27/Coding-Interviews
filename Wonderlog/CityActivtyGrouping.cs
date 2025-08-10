@@ -52,7 +52,14 @@ namespace Wonderlog
 
             foreach (var city in cityNames)
             {
-                //sort activies for each city
+                //sort activities for each city
+                activitiesDict[city].Sort();
+
+                //Join activities with comas
+                string activities = string.Join(",", activitiesDict[city]);
+
+                //Print to required format
+                System.Console.WriteLine($"{city}: {activities}");
             }
 
 
