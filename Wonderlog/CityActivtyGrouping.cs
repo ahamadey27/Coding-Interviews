@@ -26,9 +26,24 @@ namespace Wonderlog
         Rome: Colosseum
         */
 
-        public static void CityActivity(params string[] events)
+        public static void CityActivity(params string[] userInput)
         {
-            
+            var activitiesDict = new Dictionary<string, string[]>();
+
+            foreach (var events in userInput)
+            {
+                var parts = events.Split(",");
+                var city = parts[0];
+                var rest = new List<string>();
+                for (int i = 1; i < parts.Length; i++)
+                {
+                    rest.Add(parts[i]);
+                }
+
+
+            }
+
+
         }
         
     }
