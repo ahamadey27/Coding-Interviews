@@ -29,7 +29,43 @@ namespace Wonderlog
 
         public static void TaggingFunct(params string[] hashtags)
         {
+            var hashList = new Dictionary<char, string>();
+
+            foreach (var input in hashtags)
+            {
+                if (!input.StartsWith("#"))
+                {
+                    System.Console.WriteLine("Invalid");
+                    continue;
+                }
+                if (input.Length < 2 || input.Length > 15)
+                {
+                    System.Console.WriteLine("Invalid");
+                    continue;
+                }
+                if (input.Contains(" "))
+                {
+                    System.Console.WriteLine("Invalid");
+                    continue;
+                }
+
+                //checks if all characters are lower after #
+                bool valid = true;
+                for (int i = 1; i < input.Length; i++)
+                {
+                    if (input[i] < 'a' || input[i] > 'z')
+                    {
+                        valid = false;
+                        break;
+                    }
+                }
+
+                System.Console.WriteLine(valid ? "Valid" : "Invalid");
+
+                 
+            }
             
+
         }
     }
 }
