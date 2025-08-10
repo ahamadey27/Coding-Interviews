@@ -28,7 +28,7 @@ namespace Wonderlog
 
         public static void CityActivity(params string[] userInput)
         {
-            var activitiesDict = new Dictionary<string, string[]>();
+            var activitiesDict = new Dictionary<string, List<string>>();
 
             foreach (var events in userInput)
             {
@@ -39,8 +39,20 @@ namespace Wonderlog
                 {
                     rest.Add(parts[i]);
                 }
+                if (!activitiesDict.ContainsKey(city))
+                {
+                    activitiesDict[city] = new List<string>();
+                }
+                activitiesDict[city].Add(parts[1]);
+            }
 
+            //Get all city names and sort them 
+            var cityNames = new List<string>(activitiesDict.Keys);
+            cityNames.Sort();
 
+            foreach (var city in cityNames)
+            {
+                //sort activies for each city
             }
 
 
