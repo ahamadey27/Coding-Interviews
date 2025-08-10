@@ -26,5 +26,10 @@ namespace Wonderlog
         Invalid 
         Invalid
         */
+
+        public static void TaggingFunct(params string[] hashtags)
+        {
+            
+        }
     }
 }
