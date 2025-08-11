@@ -13,9 +13,11 @@ class Program
         //     "Transport: 8.25"
         // );
 
-        ReviewScore.ReviewScoreFunct("What a great trip, I love Paris!",
-        "The hotel was terrible.", "Very bad service.",
-        "The food was good, not amazing but not bad.");
+        // ReviewScore.ReviewScoreFunct("What a great trip, I love Paris!",
+        // "The hotel was terrible.", "Very bad service.",
+        // "The food was good, not amazing but not bad.");
+
+        aPlusB.APLusBFunction("1 1", "-1 0");
 
 
     }
