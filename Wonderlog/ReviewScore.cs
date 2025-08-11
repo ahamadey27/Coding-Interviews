@@ -24,11 +24,24 @@ namespace Wonderlog
         -1
         */
 
-        public static void ReviewScoreFunct(params string[])
+        public static void ReviewScoreFunct(params string[] userInput)
         {
             List<string> reviewList = new List<string>();
+            List<int> numberList = new List<int>();
 
-            
+            foreach (string text in userInput)
+            {
+                var stringParts = text.Split(" ");
+                reviewList = stringParts.ToList();
+                reviewList = reviewList.ConvertAll(d => d.ToLower());
+                for (int i = 0; i < reviewList.Count; i++)
+                {   
+                     
+                }
+
+            }
+
+
 
         }
     }
