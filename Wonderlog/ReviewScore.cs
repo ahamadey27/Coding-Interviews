@@ -42,12 +42,12 @@ namespace Wonderlog
                     //checks for negative words
                     for (int j = 0; j < positiveWords.Length; j++)
                     {
-                        if (word == positiveWords[i])
+                        if (word == positiveWords[j])
                         {
                             score++;
                         }
                     }
-                    for (int k = 0; k < positiveWords.Length; j++)
+                    for (int k = 0; k < negativeWords.Length; k++)
                     {
                         if (word == negativeWords[k])
                         {
@@ -55,9 +55,7 @@ namespace Wonderlog
                         }
                     }
                 }
-
-                int reviewNumber = 0;
-                System.Console.WriteLine($"{reviewNumber++}: {score}");
+                System.Console.WriteLine(score);
             }
             
 

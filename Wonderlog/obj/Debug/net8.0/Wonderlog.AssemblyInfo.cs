@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Wonderlog")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b68c7ba72cae8fde0ca0c1fead6a65a9afb72c2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe03e329bcaa8eb659be2f710d1dfacc03eae053")]
 [assembly: System.Reflection.AssemblyProductAttribute("Wonderlog")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Wonderlog")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
