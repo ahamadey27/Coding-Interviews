@@ -26,22 +26,40 @@ namespace Wonderlog
 
         public static void ReviewScoreFunct(params string[] userInput)
         {
-            List<string> reviewList = new List<string>();
-            List<int> numberList = new List<int>();
+            //List<string> reviewList = new List<string>();
+            //List<int> numberList = new List<int>();
+            string[] positiveWords = new string[] { "great", "amazing", "love" };
+            string[] negativeWords = new string[] { "bad", "terrible", "poor" };
 
-            foreach (string text in userInput)
+            for (int r = 0; r < userInput.Length; r++)
             {
-                var stringParts = text.Split(" ");
-                reviewList = stringParts.ToList();
-                reviewList = reviewList.ConvertAll(d => d.ToLower());
-                for (int i = 0; i < reviewList.Count; i++)
-                {   
-                     
+                int score = 0;
+                string text = userInput[r];
+                string[] words = text.Split(new char[] { ' ', '.', ',', '?', '!' }, StringSplitOptions.RemoveEmptyEntries);
+                for (int i = 0; i < words.Length; i++)
+                {
+                    string word = words[i].ToLower();
+                    //checks for negative words
+                    for (int j = 0; j < positiveWords.Length; j++)
+                    {
+                        if (word == positiveWords[i])
+                        {
+                            score++;
+                        }
+                    }
+                    for (int k = 0; k < positiveWords.Length; j++)
+                    {
+                        if (word == negativeWords[k])
+                        {
+                            score--;
+                        }
+                    }
                 }
 
+                int reviewNumber = 0;
+                System.Console.WriteLine($"{reviewNumber++}: {score}");
             }
-
-
+            
 
         }
     }
