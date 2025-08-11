@@ -29,27 +29,34 @@ namespace Wonderlog
 
         public static void ExpensesFunt(params string[] userInput)
         {
+            // Dictionary to store total expenses for each category
             var expensesDict = new Dictionary<string, decimal>();
 
+            // Loop through each expense entry
             foreach (var exps in userInput)
             {
+                // Split entry into category and amount
                 var parts = exps.Split(":");
                 var expenseType = parts[0];
                 var expensesAmount = parts[1];
+                // If category not in dictionary, initialize its total to 0
                 if (!expensesDict.ContainsKey(expenseType))
                 {
                     expensesDict[expenseType] = 0m;
                 }
+                // Add the amount to the category's total
                 expensesDict[expenseType] += decimal.Parse(expensesAmount);
 
             }
 
+            // Get all category names and sort them alphabetically
             var totalExpenses = new List<string>(expensesDict.Keys);
             totalExpenses.Sort();
 
+            // Print each category and its total, formatted to two decimal places
             foreach (var expenses in totalExpenses)
             {
-                System.Console.WriteLine($"{expenses}: {expensesDict[expenses]:0.00}");
+                System.Console.WriteLine($"{expenses} Total: {expensesDict[expenses]:0.00}");
             }
 
         }

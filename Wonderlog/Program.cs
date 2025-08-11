@@ -5,21 +5,12 @@ class Program
 {
     static void Main(string[] args)
     {
-        //HighRatedHotels.HotelFunction();
-        //ItineraryConflict.TimeConfilct("09:00-11:30", "14:00-16:00", "11:00-13:00");
-        // CityActivtyGrouping.CityActivity(
-        //     "Paris,Eiffel Tower",
-        //     "London,British Museum",
-        //     "Paris,Louvre Museum",
-        //     "Rome,Colosseum",
-        //     "London,Tower of London"
-        // );
-
-        TaggingSystem.TaggingFunct(
-            "#travel",
-            "#paris2024",
-            "#views from the top",
-            "#s"
+        ExpenseReport.ExpensesFunt(
+            "Food: 25.50",
+            "Transport: 15.00",
+            "Food: 12.75",
+            "Accommodation: 150.00",
+            "Transport: 8.25"
         );
     }
 }
