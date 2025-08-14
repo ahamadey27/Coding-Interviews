@@ -18,6 +18,7 @@ Four Seasons,9.4
 Motel 6,4.5
 Ritz Carlton,8.9
 
+
 Sample Output:
 The Peninsula
 Four Seasons
@@ -25,3 +26,10 @@ Ritz Carlton
 */
 
 // Your code here
+const hotels = {
+	"Grand Hyatt": 8.2,
+	"The Peninsula": 9.1,
+	"Four Seasons": 9.4,
+	"Motel 6": 4.5,
+	"Ritz Carlton": 8.9
+};
