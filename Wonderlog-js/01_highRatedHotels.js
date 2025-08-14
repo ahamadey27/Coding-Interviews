@@ -33,3 +33,13 @@ const hotels = {
 	"Motel 6": 4.5,
 	"Ritz Carlton": 8.9
 };
+
+//use for in loop as it cycles through keys (for...of loop cycles through values)
+for (let hotel in hotels){
+    let rating = hotels[hotel];
+    if(rating >= 8.5)
+    {
+        console.log(hotel);
+        
+    }
+}
