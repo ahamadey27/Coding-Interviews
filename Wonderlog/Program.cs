@@ -17,7 +17,10 @@ class Program
         // "The hotel was terrible.", "Very bad service.",
         // "The food was good, not amazing but not bad.");
 
-        aPlusB.APLusBFunction("1 1", "-1 0");
+        //aPlusB.APLusBFunction("1 1", "-1 0");
+
+        CommonDestinations.CommonCities("Paris,Tokyo,New York,Lisbon",
+        "London,Tokyo,Rome,Paris");
 
 
     }
