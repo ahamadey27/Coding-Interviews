@@ -46,6 +46,32 @@ namespace Wonderlog
                     setA.Add(city);
                 }
             }
+
+            var partsB = userB.Split(',');
+            var matches = new HashSet<string>();
+            foreach (var q in partsB)
+            {
+                var city = q.Trim();
+                if (setA.Contains(city))
+                {
+                    matches.Add(city);
+                }
+            }
+
+            if (matches == null)
+            {
+                System.Console.WriteLine("no matches");
+            }
+            else
+            {
+                List<string> finalList = matches.ToList();
+                finalList.Sort();
+                foreach (string name in finalList)
+                {
+                    System.Console.WriteLine(name);
+                }
+                
+            }
            
             
 
